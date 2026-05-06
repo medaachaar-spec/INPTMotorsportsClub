@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 56px;
+}
+
+/* Hero section */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
+                url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Ferrari%27s_Charles_Leclerc_battles_for_the_podium_with_Mercedes%27_Lewis_Hamilton_at_the_2022_British_Grand_Prix_at_Silverstone._%2852196620083%29.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-description {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+/* Section titles */
+.section-title {
+    color: #111;
+    font-weight: bold;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #dc3545;
+    margin: 12px auto;
+    border-radius: 10px;
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 380px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Cards */
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.icon-box {
+    font-size: 2.5rem;
+    color: #dc3545;
+}
+
+.category-card,
+.activity-card,
+.event-card,
+.team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover,
+.activity-card:hover,
+.event-card:hover,
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.activity-card {
+    border-left: 5px solid #dc3545;
+}
+
+.team-icon {
+    font-size: 4rem;
+    color: #dc3545;
+}
+
+/* Footer */
+footer i {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: #dc3545;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 80vh;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .card-img-top {
+        height: 160px;
+    }
+}

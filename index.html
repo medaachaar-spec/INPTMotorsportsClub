@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPT Motorsports Club</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSSFiles/style.css">
+</head>
+
+<body>
+<script>
+    const F1_IMG = "https://commons.wikimedia.org/wiki/Special:FilePath/2022_Formula_One_car_at_the_2021_British_Grand_Prix_(51350002179).jpg";
+    const PORSCHE_IMG = "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_911_991.2_GT3_RS.jpg";
+    const MERCEDES_IMG = "https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes_AMG_GT_GT3.jpg";
+    const GT4_IMG = "https://commons.wikimedia.org/wiki/Special:FilePath/2022_Porsche_Cayman_GT4.jpg";
+</script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-speedometer2"></i> INPT Motorsports Club
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#join">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold">INPT Motorsports Club</h1>
+
+            <p class="lead mt-3">
+                Driven by Passion, Powered by Innovation.
+            </p>
+
+            <p class="hero-description">
+                Where motorsport passion meets engineering, speed, teamwork, and automotive culture.
+            </p>
+
+            <a href="#join" class="btn btn-danger btn-lg mt-3">Join the Grid</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <div class="col-md-6">
+                    <h2 class="section-title">About the Club</h2>
+
+                    <p>
+                        INPT Motorsports Club is a student community dedicated to motorsport, automotive culture, and racing technology.
+                        The club brings together students passionate about Formula 1, GT3 racing, GT4 racing, endurance racing, sim racing, karting, and car engineering.
+                    </p>
+
+                    <p>
+                        Our goal is to create a space where students can share their passion for cars while discovering the technical aspects behind motorsport performance, such as aerodynamics, telemetry, race strategy, and vehicle design.
+                    </p>
+
+                    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                        Learn More
+                    </button>
+                </div>
+
+                <div class="col-md-6">
+                    <div id="motorsportCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
+
+                        <div class="carousel-inner rounded">
+
+                            <div class="carousel-item active">
+                                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ferrari%27s_Charles_Leclerc_battles_for_the_podium_with_Mercedes%27_Lewis_Hamilton_at_the_2022_British_Grand_Prix_at_Silverstone._%2852196620083%29.jpg" class="d-block w-100" alt="Formula 1 racing car">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Formula 1</h5>
+                                    <p>Speed, strategy, aerodynamics, and racing innovation.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Porsche_911_992_GT3_RS.jpg" class="d-block w-100" alt="Porsche 911 GT3 RS">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Porsche 911 GT3 RS</h5>
+                                    <p>Track performance, precision, and automotive passion.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes-AMG_GT3_IMG_0767.jpg" class="d-block w-100" alt="Mercedes AMG GT3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Mercedes-AMG GT3</h5>
+                                    <p>GT racing, endurance, and engineering excellence.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/2022_Porsche_Cayman_GT4.jpg" class="d-block w-100" alt="Porsche Cayman GT4">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Porsche Cayman GT4</h5>
+                                    <p>Accessible racing, race craft, and motorsport spirit.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#motorsportCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#motorsportCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title mb-4">Motorsport Categories</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm category-card">
+                        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ferrari%27s_Charles_Leclerc_battles_for_the_podium_with_Mercedes%27_Lewis_Hamilton_at_the_2022_British_Grand_Prix_at_Silverstone._%2852196620083%29.jpg" class="card-img-top" alt="Formula 1">
+                        <div class="card-body text-center">
+                            <i class="bi bi-lightning-charge-fill icon-box"></i>
+                            <h5 class="card-title mt-3">Formula 1</h5>
+                            <p class="card-text">
+                                Explore strategy, tire management, aerodynamics, hybrid power units, and race performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm category-card">
+                        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Porsche_911_992_GT3_RS.jpg" class="card-img-top" alt="Porsche 911 GT3 RS">
+                        <div class="card-body text-center">
+                            <i class="bi bi-car-front-fill icon-box"></i>
+                            <h5 class="card-title mt-3">Porsche 911 GT3 RS</h5>
+                            <p class="card-text">
+                                Discover track-focused engineering, precision driving, performance, and racing culture.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm category-card">
+                        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes-AMG_GT3_IMG_0767.jpg" class="card-img-top" alt="Mercedes AMG GT3">
+                        <div class="card-body text-center">
+                            <i class="bi bi-stopwatch-fill icon-box"></i>
+                            <h5 class="card-title mt-3">Mercedes-AMG GT3</h5>
+                            <p class="card-text">
+                                Learn about GT3 endurance racing, teamwork, driver changes, pit strategy, and performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm category-card">
+                        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/2022_Porsche_Cayman_GT4.jpg" class="card-img-top" alt="Porsche Cayman GT4">
+                        <div class="card-body text-center">
+                            <i class="bi bi-flag-fill icon-box"></i>
+                            <h5 class="card-title mt-3">GT4 Racing</h5>
+                            <p class="card-text">
+                                Explore accessible racing, sports car competition, race craft, and motorsport passion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-4">Our Activities</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card activity-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Race Watch Parties</h5>
+                            <p class="card-text">
+                                Group viewing sessions for major F1, GT3, GT4, endurance races, and motorsport events.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card activity-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Sim Racing Challenges</h5>
+                            <p class="card-text">
+                                Friendly competitions and time trial events using racing simulators and racing games.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card activity-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Talks</h5>
+                            <p class="card-text">
+                                Presentations about aerodynamics, telemetry, engines, tires, data, and race strategy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card activity-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Karting Days</h5>
+                            <p class="card-text">
+                                Real-life karting events to experience racing spirit, competition, and teamwork.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Upcoming Events</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card event-card text-dark h-100">
+                        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ferrari%27s_Charles_Leclerc_battles_for_the_podium_with_Mercedes%27_Lewis_Hamilton_at_the_2022_British_Grand_Prix_at_Silverstone._%2852196620083%29.jpg" class="card-img-top" alt="F1 event">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Race Day</span>
+                            <h5 class="card-title">F1 Grand Prix Watch Party</h5>
+                            <p class="card-text">
+                                Watch the race together and discuss pit stops, tire strategy, and team decisions.
+                            </p>
+                            <p class="text-muted">Date: May 18, 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card event-card text-dark h-100">
+                        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes-AMG_GT3_IMG_0767.jpg" class="card-img-top" alt="GT3 endurance night">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Endurance</span>
+                            <h5 class="card-title">GT3 Endurance Racing Night</h5>
+                            <p class="card-text">
+                                Discover endurance racing, driver changes, race management, and GT3 performance.
+                            </p>
+                            <p class="text-muted">Date: May 25, 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card event-card text-dark h-100">
+                        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Porsche_911_992_GT3_RS.jpg" class="card-img-top" alt="Automotive engineering talk">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Workshop</span>
+                            <h5 class="card-title">Automotive Engineering Talk</h5>
+                            <p class="card-text">
+                                Learn about aerodynamics, telemetry, car setup, performance, and racing data.
+                            </p>
+                            <p class="text-muted">Date: June 2, 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-4">Team Members</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card team-card text-center h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-person-circle team-icon"></i>
+                            <h5 class="mt-3">President</h5>
+                            <p>Leads the club and coordinates activities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card team-card text-center h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-calendar-event team-icon"></i>
+                            <h5 class="mt-3">Events Manager</h5>
+                            <p>Organizes watch parties, karting days, and competitions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card team-card text-center h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-cpu team-icon"></i>
+                            <h5 class="mt-3">Technical Lead</h5>
+                            <p>Prepares workshops about racing technology.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card team-card text-center h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-camera team-icon"></i>
+                            <h5 class="mt-3">Media Manager</h5>
+                            <p>Manages posters, communication, and social media.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title mb-4">Join the Club</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+
+                    <form id="joinForm" class="p-4 bg-white shadow rounded">
+
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="category" class="form-label">Favorite Motorsport Category</label>
+                            <select class="form-select" id="category">
+                                <option value="">Choose a category</option>
+                                <option>Formula 1</option>
+                                <option>Porsche 911 GT3 RS</option>
+                                <option>Mercedes-AMG GT3</option>
+                                <option>GT4 Racing</option>
+                                <option>Sim Racing</option>
+                                <option>Car Culture</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Why do you want to join?</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-danger w-100">Submit</button>
+                    </form>
+
+                    <div id="successAlert" class="alert alert-success mt-3 d-none">
+                        Your request has been submitted successfully. Welcome to the grid!
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">About INPT Motorsports Club</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        INPT Motorsports Club connects motorsport passion with engineering and technology.
+                        Members can participate in race discussions, sim racing competitions, technical talks, and automotive culture events.
+                    </p>
+
+                    <p>
+                        The club focuses on speed, teamwork, innovation, car culture, and learning.
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <h5>INPT Motorsports Club</h5>
+
+            <p class="mb-2">
+                Driven by Passion, Powered by Innovation.
+            </p>
+
+            <div>
+                <i class="bi bi-instagram mx-2"></i>
+                <i class="bi bi-facebook mx-2"></i>
+                <i class="bi bi-github mx-2"></i>
+                <i class="bi bi-envelope mx-2"></i>
+            </div>
+
+            <p class="mt-3 mb-0">
+                &copy; 2026 INPT Motorsports Club. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="JsFiles/script.js"></script>
+
+</body>
+</html>
